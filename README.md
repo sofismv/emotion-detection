@@ -1,6 +1,6 @@
 # Emotion detection. NLP Course Project.
-
-Authors Samoilova Sofia, Syti Dmitry. Kalimullin Evgeniy
+Information about method in this report
+Authors: Sofia Samoilova, Dmitrii Sutyi, Evgeniy Kalimullin
 
 ## Prerequisites
 
