@@ -11,3 +11,6 @@ Authors: Sofia Samoilova, Dmitrii Sutyi, Evgeniy Kalimullin
 ## Repo structure
 
 ## Result
+
+## Report
+https://api.wandb.ai/links/sofism/wjjjfh8l
