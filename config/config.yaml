@@ -1,0 +1,67 @@
+model:
+  name: "yandex/YandexGPT-5-Lite-8B-instruct"
+  torch_dtype: "bfloat16"
+  trust_remote_code: true
+  use_cache: false
+  problem_type: "multi_label_classification"
+  
+  use_quantization: true 
+  quantization_config:
+    load_in_4bit: true
+    bnb_4bit_quant_type: "nf4"
+    bnb_4bit_use_double_quant: true
+    bnb_4bit_compute_dtype: "bfloat16"
+
+dataset:
+  name: "brighter-dataset/BRIGHTER-emotion-categories"
+  language: "rus"
+  emotion_columns:
+    - anger
+    - fear
+    - joy
+    - disgust
+    - sadness
+    - surprise
+  max_length: 512
+
+lora:
+  r: 8
+  lora_alpha: 16
+  target_modules: "all-linear"
+  lora_dropout: 0.1
+  bias: "none"
+  modules_to_save:
+    - score
+
+training:
+  output_dir: "llm_cls_final"
+  learning_rate: 0.00003
+  num_train_epochs: 4
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 4
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  
+  eval_strategy: "epoch"
+  save_strategy: "no"
+  logging_strategy: "steps"
+  logging_steps: 10
+  
+  bf16: false
+  fp16: true
+  gradient_checkpointing: true
+  group_by_length: true
+
+hardware:
+  cuda_device: "7"
+  pad_to_multiple_of: 16
+  monitor_gpu: true 
+  log_gpu_stats: true
+
+evaluation:
+  threshold: 0.5
+
+seed: 42
