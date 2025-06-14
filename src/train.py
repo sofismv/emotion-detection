@@ -226,7 +226,7 @@ class EmotionClassifierTrainer:
         """Compute evaluation metrics"""
         predictions, labels = eval_pred
         predictions = torch.sigmoid(torch.tensor(predictions)).numpy()
-        y_pred = predictions > self.config['evaluation']['default_threshold']
+        y_pred = predictions > self.config['evaluation']['threshold']
 
         results = {}
         for average in ['micro', 'macro']:
@@ -290,7 +290,7 @@ class EmotionClassifierTrainer:
         with self.gpu_monitor.monitor_context("Training"):
             trainer.train()
         
-        self.evaluate_test_set(trainer, test_ds, self.config['evaluation']['treshold'], emotion_cols)
+        self.evaluate_test_set(trainer, test_ds, self.config['evaluation']['threshold'], emotion_cols)
         
         print("Saving model...")
         trainer.save_model()
