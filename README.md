@@ -1,5 +1,4 @@
 # Emotion detection. NLP Course Project.
-Information about method in this report  
 Authors: Sofia Samoilova, Dmitrii Sutyi, Evgeniy Kalimullin  
 About this task https://github.com/emotion-analysis-project/SemEval2025-Task11  
 track A in rus:  
