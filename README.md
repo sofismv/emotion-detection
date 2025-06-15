@@ -18,7 +18,19 @@ conda activate emotion_detection
 3. Run train.py
 
 ## Repo structure
-<pre> <code> ``` . ├── README.md ├── config │   └── config.yaml ├── environment.yaml ├── notebooks │   ├── few_shot_prompt.ipynb │   ├── rubert.ipynb │   └── zero_shot_prompt.ipynb ├── src │   └── train.py └── tree.txt ``` </code> </pre>
+<pre> <code> ``` .
+├── README.md
+├── config
+│   └── config.yaml
+├── environment.yaml
+├── notebooks
+│   ├── few_shot_prompt.ipynb
+│   ├── rubert.ipynb
+│   └── zero_shot_prompt.ipynb
+├── src
+│   └── train.py
+└── tree.txt
+``` </code> </pre>
 ## Result
 
 ## Report
