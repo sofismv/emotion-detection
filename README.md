@@ -18,7 +18,7 @@ conda activate emotion_detection
 3. Run train.py
 
 ## Repo structure
-<pre> <code>.
+<pre><code>.
 ├── README.md
 ├── config
 │   └── config.yaml
