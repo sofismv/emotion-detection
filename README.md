@@ -4,7 +4,10 @@ Authors: Sofia Samoilova, Dmitrii Sutyi, Evgeniy Kalimullin
 About this task https://github.com/emotion-analysis-project/SemEval2025-Task11  
 track A in rus:  
 [Official Ranking](https://docs.google.com/spreadsheets/d/1pyKXpvmVsE1rwu8aRnfn372rD-v3L4Qo/edit?gid=669615273#gid=669615273)  
-[Unofficial Ranking](https://docs.google.com/spreadsheets/d/1IgPfmL0z9Lc7GCVY3LwOsHEGQTvOjtZ0/edit?gid=348498964#gid=348498964)  
+[Unofficial Ranking](https://docs.google.com/spreadsheets/d/1IgPfmL0z9Lc7GCVY3LwOsHEGQTvOjtZ0/edit?gid=348498964#gid=348498964)
+## Paper With Results
+[Emotion detection in russian language](https://github.com/sofismv/emotion-detection/blob/main/paper.pdf).
+
 ## Prerequisites
 ⋅⋅*10GB GPU memory(we use NVIDIA GeForce RTX 2080 Ti)
 
