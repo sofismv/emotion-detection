@@ -18,7 +18,7 @@ conda activate emotion_detection
 3. Run train.py
 
 ## Repo structure
-<pre> <code> .
+<pre> <code>.
 ├── README.md
 ├── config
 │   └── config.yaml
@@ -31,7 +31,6 @@ conda activate emotion_detection
 │   └── train.py
 └── tree.txt
  </code> </pre>
-## Result
 
 ## Report
 https://api.wandb.ai/links/sofism/wjjjfh8l
